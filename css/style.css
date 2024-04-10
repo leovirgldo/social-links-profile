@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --Dark-Grey: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+body {
+  background-color: var(--Off-Black);
+  color: var(--White);
+  font-family: "Inter", sans-serif;
+}
+section {
+  background-color: var(--Dark-Grey);
+  max-width: 340px;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+section img {
+  border-radius: 50%;
+  width: 30%;
+  margin-bottom: 25px;
+}
+section h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+section address {
+  font-style: normal;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+section p {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+section .container .content {
+  background-color: var(--Grey);
+  margin-bottom: 15px;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+}
+section .container .content:hover {
+  background-color: var(--green);
+  color: var(--Grey);
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  section {
+    max-width: 400px;
+    padding: 45px;
+    padding-bottom: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
