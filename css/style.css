@@ -14,11 +14,11 @@ body {
   background-color: var(--Off-Black);
   color: var(--White);
   font-family: "Inter", sans-serif;
-  height: 100vh;
+  height: 100%;
 }
 section {
   background-color: var(--Dark-Grey);
-  max-width: 340px;
+  width: 340px;
   margin: auto;
   text-align: center;
   border-radius: 10px;
@@ -64,9 +64,22 @@ section .container .content:hover {
   color: var(--Grey);
   cursor: pointer;
 }
+@media screen and (max-width: 375px) {
+  section {
+    width: 280px;
+  }
+  section p {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 375px) {
+  section {
+    width: 340px;
+  }
+}
 @media screen and (min-width: 768px) {
   section {
-    max-width: 400px;
+    width: 400px;
     padding: 45px;
     padding-bottom: 20px;
     top: 50%;
