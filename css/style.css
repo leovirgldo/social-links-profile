@@ -14,6 +14,7 @@ body {
   background-color: var(--Off-Black);
   color: var(--White);
   font-family: "Inter", sans-serif;
+  height: 100vh;
 }
 section {
   background-color: var(--Dark-Grey);
